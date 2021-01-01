@@ -19,7 +19,22 @@
 # Data Cleaning
 After scraping the data, I needed to clean it up so that it was usable for our model. I made the following changes:
 - Converted the categorical variables to dummy variable
+- Normalized the data
 - Removed outliers
 
 # EDA
+I looked at the distributions of the data and the value counts for the various categorical variables. Below are a few highlights:
 
+![alt](https://github.com/BhartiPandit98/Health_Insurance_Amount_Prediction/blob/main/Box%20Plot.JPG)
+
+![alt](https://github.com/BhartiPandit98/Health_Insurance_Amount_Prediction/blob/main/Scatterplot.JPG)
+
+![alt](https://github.com/BhartiPandit98/Health_Insurance_Amount_Prediction/blob/main/Charge%20Distribution.JPG)
+
+# Model Building
+ First I split the data into train and tests sets with a test size of 20%.
+ 
+ I tried two different models and evaluated them using R-Squared:
+ 
+ - Multiple Linear Regression - R2-Score = 0.76
+ - Polynomial Regression - R2-Score = 0.85
